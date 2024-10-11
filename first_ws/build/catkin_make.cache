@@ -1,0 +1,2 @@
+basic_pkg
+-DCATKIN_DEVEL_PREFIX=/home/alashkar/Desktop/Github/ROS_Projects/first_ws/devel -DCMAKE_INSTALL_PREFIX=/home/alashkar/Desktop/Github/ROS_Projects/first_ws/install -G Unix Makefiles
