@@ -30,7 +30,7 @@
 	
 
 	<!--launch rviz-->
-	<!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false"
-		  args="-d $(find sparkbot_description)/default.rviz"/>-->
+	 <node name="rviz" pkg="rviz" type="rviz" respawn="false"
+		  args="-d $(find sparkbot_description)/default.rviz"/>
 
 </launch>

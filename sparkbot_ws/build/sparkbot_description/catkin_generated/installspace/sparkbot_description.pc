@@ -1,8 +1,0 @@
-prefix=/home/alashkar/Desktop/ROS_Projects/sparkbot_ws/install
-
-Name: sparkbot_description
-Description: Description of sparkbot_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
