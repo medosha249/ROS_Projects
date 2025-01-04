@@ -29,11 +29,11 @@
     <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find robot_description)/urdf/my_robot.xacro'" />
 
     <!-- Spawn my robot -->
-    <node name="FourWheeledRobot_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model FourWheeledRobot" />
+    <node name="Robotika_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model robotika" />
 
   <!-- launch rviz -->
 	 <node name="rviz" pkg="rviz" type="rviz" respawn="false"
-		  args="-d $(find robot_description)/nav.rviz"/>
+		  args="-d $(find robot_description)/default.rviz"/>
 
     <!-- Send fake joint Values -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
@@ -45,9 +45,6 @@
 
     <!-- mapping-->
     <include file="$(find mapping_pkg)/launch/gmapping.launch" />
-
-    <!-- navigation-->
-    <!-- <include file="$(find navigation_pkg)/launch/navigation.launch" /> -->
 
 
 </launch>
