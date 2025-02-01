@@ -1,2 +1,0 @@
-navigation_pkg:robot_description
--DCATKIN_DEVEL_PREFIX=/home/alashkar/Desktop/ROS_Projects/scratch_ws/devel -DCMAKE_INSTALL_PREFIX=/home/alashkar/Desktop/ROS_Projects/scratch_ws/install -G Unix Makefiles
