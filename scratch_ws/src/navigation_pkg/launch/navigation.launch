@@ -4,5 +4,6 @@
     <include file="$(find navigation_pkg)/launch/amcl.launch"/>
     <include file="$(find robot_description)/launch/world.launch"/>
     <include file="$(find navigation_pkg)/launch/move_base.launch"/>
+    <include file="$(find navigation_pkg)/launch/mapping.launch"/>
 
 </launch>

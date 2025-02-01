@@ -13,7 +13,8 @@
 
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
-  <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+  <!-- Used TEB instead of DWA -->
+  <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
 
     <rosparam file="$(find navigation_pkg)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find navigation_pkg)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
@@ -21,15 +22,15 @@
     <rosparam file="$(find navigation_pkg)/param/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find navigation_pkg)/param/move_base_params.yaml" command="load" />
     <rosparam file="$(find navigation_pkg)/param/global_planner_params.yaml" command="load" /> 
-    <rosparam file="$(find navigation_pkg)/param/dwa_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find navigation_pkg)/param/teb_local_planner_params.yaml" command="load" />
     
-    <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+    <param name="TebLocalPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
     
 		<param name= "global_costmap/global_frame" value="$(arg global_frame_id)"/>
 		<param name= "global_costmap/robot_base_frame" value="$(arg base_frame_id)"/>
 		<param name= "local_costmap/global_frame" value="$(arg odom_frame_id)"/>
 		<param name= "local_costmap/robot_base_frame" value="$(arg base_frame_id)"/>
-		<param name= "DWAPlannerROS/global_frame_id" value="$(arg odom_frame_id)"/>
+		<param name= "TepLocalPlannerROS/global_frame_id" value="$(arg odom_frame_id)"/>
 <!--	-->	
     
     <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>

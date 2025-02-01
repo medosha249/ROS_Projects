@@ -6,7 +6,7 @@
     <arg name="initial_pose_y" default="0.0"/>
     <arg name="initial_pose_a" default="0.0"/>
 
-    <node name="map_server" pkg="map_server" type="map_server" args="$(find navigation_pkg)/maps/map.yaml"/>
+    <!--<node name="map_server" pkg="map_server" type="map_server" args="$(find navigation_pkg)/maps/map.yaml"/>-->
 
     <!-- AMCL -->
     <node name="amcl" type="amcl" pkg="amcl">
