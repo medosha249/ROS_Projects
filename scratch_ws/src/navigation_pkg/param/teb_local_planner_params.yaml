@@ -18,7 +18,7 @@ TebLocalPlannerROS:
 
   acc_lim_x: 4.5
   acc_lim_y: 4.5
-  acc_lim_theta: 4.2 
+  acc_lim_theta: 3.2 
 
 # Goal Tolerance Parameters
   xy_goal_tolerance: 0.5

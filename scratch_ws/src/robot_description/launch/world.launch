@@ -12,7 +12,7 @@
 
 
     <!-- Use Your Custom World -->
-    <arg name="world_name" value="$(find robot_description)/worlds/simple.world"/>
+    <arg name="world_name" value="$(find robot_description)/worlds/hospital.world"/>
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg world_name)" />
         <arg name="paused" value="$(arg paused)" />
